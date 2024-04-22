@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Tutor</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      justify-content: space-around;
+      align-items: center;
+      display: flex;
+      position: relative;
+      padding-top: 40px;
+    }
+    .box0 {
+      margin-left: 23px;
+    }
+    .box1 {
+      margin-left: 482px;
+      margin-right: auto;
+    }
+    .box2 {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 268px;
+    }
+    .box3 {
+      margin-left: auto;
+      margin-right: 46px;
+    }
+    .banner {
+      text-transform: capitalize;
+      font-family: "Roboto", sans-serif;
+      font-size: 37px;
+      position: absolute;
+      top: 36%;
+      left: 53%;
+      transform: translate(-50%, -50%);
+      color: white; /* Adjust text color for better visibility */
+      z-index: 1; /* Ensure text is on top of the image */
+    }
+    .image {
+      position: relative;
+    }
+    .searchbar {
+      height: 87px;
+      width: 960px;
+      border-radius: 10px;
+      background-color: rgba(53, 84, 105, 0.46);
+      display: flex;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      position: absolute;
+      bottom: 188px;
+      left: 55%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+    .item0 {
+      font-size: 25.6px;
+      font-family: "Roboto", sans-serif;
+      position: relative;
+    }
+    /* .item1{
+      background-color: #fff;
+      font-family: "Roboto", sans-serif;
+      width: 389px;
+      height: 34px;
+      border-radius: 5px;
+      position: relative;
+      color: #555;
+      
+    } */
+    .item1 {
+      background-color: #fff;
+      font-family: "Roboto", sans-serif;
+      width: 389px;
+      height: 19px;
+      border-radius: 5px;
+      position: relative;
+      color: #555;
+      font-size: 16px; /* Adjust font size */
+      line-height: 1.5; /* Adjust line height */
+      padding: 10px; /* Adjust padding */
+      margin-top: 5px; /* Adjust margin top */
+    }
+
+    .item2 {
+      color: #fff;
+      background-color: #204d74;
+      border-color: #122b40;
+      padding: 7px;
+      border-radius: 4px;
+      font-family: "Roboto", sans-serif;
+    }
+    .list {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      font-family: Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 15px 20px;
+    }
+    li img {
+      padding-left: 6px;
+    }
+    .main2 {
+      padding-top: 10px;
+      width: 100%;
+      height: 687px;
+      box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.3);
+      margin-top: 17px;
+      font-family: Helvetica, sans-serif;
+      background-color: #f0f0f0;
+    }
+    .image2 {
+      display: grid;
+      /* display: flex; */
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-around;
+      padding-top: 61px;
+      gap: 45px;
+    }
+    .b {
+      display: grid;
+      font-size: 20px;
+      text-align: center;
+      font-size: small;
+    }
+    .b p {
+      text-align: center;
+    }
+    .b img {
+      padding-left: 186px;
+    }
+    .text {
+      text-align: center;
+      padding-top: 75px;
+      font-size: small;
+      color: #131313;
+    }
+    .b span {
+      padding: 5px 10px;
+      width: 14px;
+      background: #6ec3ff;
+      color: #ffffff;
+      margin-left: 3px;
+      border-radius: 50px;
+    }
+    .sud {
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      height: 500px;
+      box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+    }
+    .sudbody {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding-top: 55px;
+    }
+    .sudhed {
+      padding-top: 78px;
+      color: #131313;
+    }
+    .sudbox {
+      text-align: center;
+      height: 250px;
+    }
+    .sudbox p {
+      padding-top: 17px;
+    }
+    .sudbox span {
+      /* padding-top: 10px; */
+    }
+    .foot1 {
+      /* height: 400px; */
+    }
+    .foot1 img {
+      height: 441px;
+    }
+    .foot {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+      background: #313233;
+      padding-top: 50px;
+      font-family: Helvetica, sans-serif;
+      height: 309px;
+    }
+    .fbc {
+      font-size: 22px;
+      color: #007dbc;
+      font-weight: bold;
+      text-shadow: 0 0 1px #fff, 0 0 1px #fff;
+    }
+    .fbc1{
+      color: #fff;
+      /* text-align: center; */
+      
+
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box0">
+        <a href="https://wa.me/919911699699">+91-9572-030264 </a>
+      </div>
+      <div class="box1">
+        <img width="200px" src="my tutor logo.png" alt="" />
+      </div>
+      <div class="box2">Become a tutor</div>
+      <div class="box3">Book A Tutor</div>
+    </div>
+    <div class="main">
+      <div class="image">
+        <div class="banner">The Simplest Way To Hire A Teacher</div>
+        <img width="100%" src="my tutor 2nd img.jpg" alt="" />
+        <div class="searchbar">
+          <div class="item0">I am looking for</div>
+          <div class="item1">Type Subject</div>
+          <div class="item2">Find A Tutor</div>
+        </div>
+      </div>
+    </div>
+    <div class="list">
+      <li>Science <img height="10px" src="plus button.jpeg" alt="" /></li>
+      <li>Math <img height="10px" src="plus button.jpeg" alt="" /></li>
+      <li>Commerece <img height="10px" src="plus button.jpeg" alt="" /></li>
+      <li>Humanity <img height="10px" src="plus button.jpeg" alt="" /></li>
+      <li>Language <img height="10px" src="plus button.jpeg" alt="" /></li>
+      <li>Computer <img height="10px" src="plus button.jpeg" alt="" /></li>
+      <li>Hobby <img height="10px" src="plus button.jpeg" alt="" /></li>
+    </div>
+    <div class="main2">
+      <div class="text">
+        <h1>How it works</h1>
+        <h2>Hire a trusted professional in 3 simple steps</h2>
+      </div>
+      <div class="image2">
+        <div class="b">
+          STEP<span>1</span>
+
+          <img height="100px" src="main2 doc img.png" alt="" />
+          <h1>Choose your tutor</h1>
+          <p>
+            Look through the profiles of thousands of verified professionals and
+            place a request for them. Or call us at +91 9911699699 to make it
+            quick, we will help you have only best fit tutors to contact you!
+            Our Education Consultant will reach out to you with the profile of
+            the prospective tutor and their prices that suits your budget
+          </p>
+        </div>
+
+        <div class="b">
+          STEP 2<img height="100px" src="customer img.png" alt="" />
+          <h1>Communicate with tutor</h1>
+          <p>
+            Communicate with tutor over phone prior to calling them for first
+            class. Discuss scheduling, teaching styles and more to ensure you
+            find the perfect fit.
+          </p>
+        </div>
+        <div class="b">
+          STEP 3 <img height="100px" src="chat box img.png" alt="" />
+          <h1>Hassle-free payment</h1>
+          <p>
+            No extra payment. You pay only for the sessions you take. No
+            commitments. No scheduling restrictions. You are never required to
+            commit to any minimum number of sessions. Get great tutoring when
+            you need it. Only after finalization of the best fit tutor you have
+            to pay 1 month's fee as upfront payment (minimum 8hrs of fee). Rest
+            of the payments you pay directly to the tutor after the class. Still
+            have questions? View FAQs.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="sud">
+      <div class="sudhed">
+        <h1>Why TryMyTutor?</h1>
+        <p>Hire a trusted professional in 3 simple steps</p>
+      </div>
+      <div class="sudbody">
+        <div class="sudbox">
+          <img height="120px" src="group img.png" alt="" />
+          <p>We Match Your Needs</p>
+          <p>From the right professional to the right budget</p>
+        </div>
+        <div class="sudbox">
+          <img height="120px" src="leaf img.png" alt="" />
+          <p>Trusted Professionals</p>
+          <p>
+            We partner with trusted professionals who meet our high quality
+            standard.
+          </p>
+        </div>
+        <div class="sudbox">
+          <img height="120px" src="good tick img.png" alt="" />
+          <p>Guaranteed Service</p>
+          <p>
+            We ensure a hassle free process from booking to delivery of the
+            service.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="foot1">
+      <img src="2nd last foot.png" alt="" />
+    </div>
+    <div class="foot">
+      <div class="footbox">
+        <div class="fbc"><img height="50px" src="logo 2.png" alt="" /></div>
+        <div class="fbc1">
+          To provide the most transparent, honest and efficient services for
+          prospective students and to represent a highly qualified teacher with
+          a commitment to excellence.
+        </div>
+      </div>
+      <div class="footbox">
+        <div class="fbc">Area of work</div>
+        <div class="fbc1">Tutors in India
+          Tutors in United States
+          Tutors in Canada
+          Tutors in Europe
+          Tutors in Australia
+          Tutors in Middle East</div>
+      </div>
+      <div class="footbox">
+        <div class="fbc">Information</div>
+        <div class="fbc1">About Us
+          FAQ
+          Contact Us
+          Terms of use
+          Privacy Policy
+          Terms For Tutors</div>
+      </div>
+    </div>
+  </body>
+</html>
